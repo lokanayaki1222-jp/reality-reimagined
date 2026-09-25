@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | Reality Reimagined</title>
+
+    <link rel="stylesheet" href="login.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="login-page">
+
+        <!-- Background glow -->
+        <div class="glow glow-one"></div>
+        <div class="glow glow-two"></div>
+
+        <!-- Left Section -->
+        <div class="login-left">
+
+            <div class="brand">
+                <div class="brand-logo">
+                    RE  
+                </div>
+
+                <div class="brand-text">
+                    <span>REALITY</span>
+                    <strong>REIMAGINED</strong>
+                </div>
+            </div>
+
+            <div class="left-content">
+                <p class="small-title">WELCOME BACK</p>
+
+                <h1>
+                    Enter a<br>
+                    <span>Different Reality.</span>
+                </h1>
+
+                <p class="description">
+                    Step back into a world where imagination has no limits.
+                    Continue exploring possibilities beyond the ordinary.
+                </p>
+
+                <div class="line"></div>
+
+                <p class="quote">
+                    “What if reality could be different?”
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- Right Login Section -->
+        <div class="login-right">
+
+            <div class="login-card">
+
+                <div class="card-heading">
+                    <h2>Welcome Back</h2>
+
+                    <p>
+                        Login to continue your journey
+                    </p>
+                </div>
+
+
+                <form>
+
+                    <!-- Email -->
+                    <div class="input-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <div class="input-box">
+
+                            <span class="input-icon">
+                                ✉
+                            </span>
+
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="Enter your email"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Password -->
+                    <div class="input-group">
+
+                        <label for="password">
+                            Password
+                        </label>
+
+                        <div class="input-box">
+
+                            <span class="input-icon">
+                                🔒
+                            </span>
+
+                            <input
+                                type="password"
+                                id="password"
+                                placeholder="Enter your password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="show-password"
+                                onclick="togglePassword()">
+                                👁
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Options -->
+                    <div class="login-options">
+
+                        <label class="remember">
+
+                            <input
+                                type="checkbox"
+                                id="remember"
+                            >
+
+                            <span>Remember me</span>
+
+                        </label>
+
+                        <a href="#" class="forgot">
+                            Forgot Password?
+                        </a>
+
+                    </div>
+
+
+                    <!-- Login Button -->
+                    <button
+                        type="submit"
+                        class="login-btn">
+
+                        <span>LOGIN</span>
+
+                        <span class="arrow">
+                            →
+                        </span>
+
+                    </button>
+
+
+                    <!-- Divider -->
+                    <div class="divider">
+
+                        <span></span>
+
+                        <p>OR</p>
+
+                        <span></span>
+
+                    </div>
+
+
+                    <!-- Google Login -->
+                    <button
+                        type="button"
+                        class="google-btn">
+
+                        <span class="google-icon">
+                            G
+                        </span>
+
+                        Continue with Google
+
+                    </button>
+
+
+                    <!-- Register -->
+                    <p class="register-text">
+
+                        Don't have an account?
+
+                        <a href="register.html">
+                            Create Account
+                        </a>
+
+                    </p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        function togglePassword() {
+
+            const password =
+                document.getElementById("password");
+
+            const button =
+                document.querySelector(".show-password");
+
+            if (password.type === "password") {
+
+                password.type = "text";
+
+                button.textContent = "🙈";
+
+            } else {
+
+                password.type = "password";
+
+                button.textContent = "👁";
+
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>
